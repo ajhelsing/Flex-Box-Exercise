@@ -1,0 +1,59 @@
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+body{
+    padding:0px;
+    margin:0px;  
+    background-color: black; 
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    border-color: white;
+}
+
+.container1{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    border-color: white;
+}
+
+.item{
+    width:10%;
+    font-size:50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    animation: mymove 3s infinite;
+    line-height: 100px;
+}
+h1 {
+    font-family: 'Alfa Slab One';
+    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 25px red;
+    font-size: 31px;
+    color: white;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: black;
+}
+::selection {
+    color: red;
+    background: black;
+}
+
+@keyframes mymove {
+    from {background-color: rgb(21, 52, 20);}
+    to {background-color: rgb(231, 226, 226);}
+}
